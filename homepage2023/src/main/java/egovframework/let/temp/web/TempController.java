@@ -73,4 +73,23 @@ public class TempController {
 		return "forward:/temp/selectList.do";
 	}
 	
+	//JSTL
+	@RequestMapping(value = "/temp/jstl.do")
+	public String jstl(TempVO searchVO, HttpServletRequest request, ModelMap model) throws Exception{
+		
+		return "/temp/Jstl";
+	}
+	
+	//JSTL Import용
+	@RequestMapping(value = "/temp/jstlImport.do")
+	public String jstlImport(TempVO searchVO, HttpServletRequest request, ModelMap model) throws Exception{
+		
+		return "/temp/JstlImport";
+	}
+	
+	
+	
+	
+	
+	
 }
